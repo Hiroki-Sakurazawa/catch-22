@@ -1,0 +1,26 @@
+.header{
+  background-color: black;
+  height: 50px;
+  width: 100%;
+}
+
+.title-block{
+display: flex;
+align-items: flex-end;
+}
+
+.catch22-font{
+color: white;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-size: 36px;
+margin:5px 0px 0px 10px;
+}
+
+.alien-logo{
+  padding: 0px 0px 3px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

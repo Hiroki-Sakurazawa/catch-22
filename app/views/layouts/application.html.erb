@@ -8,11 +8,11 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
     <header class="header">
-      <div class="header__bar">
-        <h1 class="catch22"><a href="/">Catch22</a></h1>
+      <div class="title-block">
+        <h1 class="catch22-font">Catch22</h1>
+        <%= image_tag 'alien_logo.png' , size: '40x40' ,class: "alien-logo" %>
       </div>
     </header>
     <%= yield %>

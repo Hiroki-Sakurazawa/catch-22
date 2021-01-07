@@ -13,7 +13,7 @@ display: flex;
 align-items: flex-end;
 }
 
-.catch22-font{
+.catch22{
 color: white;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 font-size: 36px;
@@ -21,7 +21,28 @@ margin:5px 0px 0px 10px;
 }
 
 .alien-logo{
-  padding: 0px 0px 3px;
+  margin: 0px 0px 3px;
+}
+
+.main{
+  height: calc(100vh - 90px);
+  background-color: rgb(36, 36, 36);
+}
+
+.footer{
+  background-color: black;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.copyright{
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 14px;
+  margin: 0px 10px 0px 0px;
 }
 
 * {

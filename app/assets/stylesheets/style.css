@@ -4,6 +4,10 @@
   width: 100%;
 }
 
+.title-block-link{
+  text-decoration: none;
+}
+
 .title-block{
 display: flex;
 align-items: flex-end;

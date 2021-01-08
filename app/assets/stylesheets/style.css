@@ -18,11 +18,11 @@ align-items: flex-end;
 color: white;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 font-size: 36px;
-margin:5px 0px 0px 10px;
+margin:4px 0px 0px 12px;
 }
 
 .alien-logo{
-  margin: 0px 0px 3px;
+  margin-bottom: 3px;
 }
 
 .main{
@@ -42,15 +42,15 @@ margin:5px 0px 0px 10px;
 .copyright{
   color: white;
   font-family:'Courier New', Courier, monospace;
-  font-size: 14px;
+  font-size: 13px;
 }
 
-.search-bar {
+.search-block {
   display: flex;
   width: 100%;
 }
 
-.bar1{
+.block1{
   width: 78%;
   height: 50px;
   display: flex;
@@ -58,15 +58,16 @@ margin:5px 0px 0px 10px;
   align-items: center;
 }
 
-.bar2{
+.block2{
   width: 22%;
   height: 50px;
 }
 
 .search-form {
-  width: 40vw;
+  width: 38vw;
   height: 25px;
   display: flex;
+  margin-bottom: 2.5px;
 }
 
 .search-form>.input-box {
@@ -75,15 +76,17 @@ margin:5px 0px 0px 10px;
 }
 
 .search-button {
-  width: 5vh;
+  width: 50px;
+  height: 29px;
   border: 0;
   cursor: pointer;
   background-color: grey;
-  padding: 8px;
+  padding: 7px 0px;
 }
 
-.search-icon {
-  width: 100%;
+.search-logo {
+  height: 17px;
+  width: 17px;
 }
 
 * {

@@ -61,6 +61,15 @@ margin:4px 0px 0px 12px;
 .block2{
   width: 22%;
   height: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.string{
+  font-size: 13px;
+  color: red;
+  margin-top: 2px;
 }
 
 .search-form {

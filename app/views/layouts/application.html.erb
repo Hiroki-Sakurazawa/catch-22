@@ -19,13 +19,14 @@
       <div class="search-block">
       <div class="block1">
         <%= form_with(url: "#", local: true, method: :get, class: "search-form") do |form| %>
-        <%= form.text_field :keyword, placeholder: "", class: "input-box" %>
+        <%= form.text_field :keyword, placeholder: "検索", class: "input-box" %>
         <button class="search-button">
         <%= image_submit_tag "search.png", class:"search-logo" %>
         </button>
         <%end%>
       </div>
       <div class="block2">
+        <p class="string">オカルト情報共有サイト Catch22</p>
       </div>
       </div>
     </header>

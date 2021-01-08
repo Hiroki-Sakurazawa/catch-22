@@ -16,13 +16,17 @@
         <%= image_tag 'alien_logo.png' , size: '40x40' ,class: "alien-logo" %>
       </div>
       <% end %>
-      <div class="search-bar-contents">
+      <div class="search-bar">
+      <div class="bar1">
         <%= form_with(url: "#", local: true, method: :get, class: "search-form") do |form| %>
         <%= form.text_field :keyword, placeholder: "", class: "input-box" %>
         <button class="search-button">
         <%= image_submit_tag "search.png", class:"search-icon" %>
         </button>
         <%end%>
+      </div>
+      <div class="bar2">
+      </div>
       </div>
     </header>
     <main class="main">

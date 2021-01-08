@@ -43,21 +43,30 @@ margin:5px 0px 0px 10px;
   color: white;
   font-family:'Courier New', Courier, monospace;
   font-size: 14px;
-  margin: 0px 10px 0px 0px;
 }
 
-.search-bar-contents {
+.search-bar {
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
 
-.search-form {
-  width: 50vw;
-  height: 4vh;
+.bar1{
+  width: 78%;
+  height: 50px;
   display: flex;
-  margin-bottom: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar2{
+  width: 22%;
+  height: 50px;
+}
+
+.search-form {
+  width: 40vw;
+  height: 25px;
+  display: flex;
 }
 
 .search-form>.input-box {

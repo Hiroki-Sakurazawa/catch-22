@@ -13,7 +13,7 @@
       <%= link_to root_path, class: "title-block-link", method: :get do %>
       <div class="title-block">
         <h1 class="catch22">Catch22</h1>
-        <%= image_tag 'alien_logo.png' , size: '40x40' ,class: "alien-logo" %>
+        <%= image_tag 'alien.png' , size: '40x40' ,class: "alien-logo" %>
       </div>
       <% end %>
       <div class="search-block">
@@ -21,12 +21,22 @@
         <%= form_with(url: "#", local: true, method: :get, class: "search-form") do |form| %>
         <%= form.text_field :keyword, placeholder: "検索", class: "input-box" %>
         <button class="search-button">
-        <%= image_submit_tag "search.png", class:"search-logo" %>
+        <%= image_submit_tag "search.png", class:"search-image" %>
         </button>
         <%end%>
       </div>
       <div class="block2">
-        <p class="string">オカルト情報共有サイト Catch22</p>
+      <div class="sign-in-box">
+        <%= image_tag 'radioactive.png' , size: '28x28' ,class: "radioactive-logo" %>
+        <p class="sign-in">新規登録</p>
+      </div>
+      <div class="log-in-box">
+        <%= image_tag 'radioactive.png' , size: '28x28' ,class: "radioactive-logo" %>
+        <p class="log-in">ログイン</p>
+      </div>
+      </div>
+      <div class="block3">
+        <p class="site-info">オカルト情報共有サイト Catch22</p>
       </div>
       </div>
     </header>

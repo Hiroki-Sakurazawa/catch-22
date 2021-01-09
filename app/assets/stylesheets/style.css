@@ -38,7 +38,7 @@ margin:4px 0px 0px 12px;
 
 .main-right-top{
   width: 100%;
-  height: 100px;
+  height: 30px;
   background-color: #09ff00;
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@ margin:4px 0px 0px 12px;
 
 .post{
   color: darkgreen;
-  font-size: 28px;
+  font-size: 17px;
   font-weight: bold;
 }
 
@@ -164,7 +164,7 @@ margin:4px 0px 0px 12px;
   height: 25px;
   display: flex;
   margin-bottom: 2.5px;
-  margin-left: 20px;
+  margin-left: 18px;
 }
 
 .search-form>.input-box {

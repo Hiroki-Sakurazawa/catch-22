@@ -27,10 +27,10 @@
       </div>
       <div class="search-block2">
       <div class="sign-in-box">
-        <p class="log-in">ログイン</p>
+        <%= link_to "ログイン", new_user_session_path, class: "log_in" %>
       </div>
       <div class="log-in-box">
-        <p class="sign-in">新規登録</p>
+        <%= link_to "新規登録", new_user_registration_path, class: "sign_in" %>
       </div>
       </div>
       <div class="search-block3">

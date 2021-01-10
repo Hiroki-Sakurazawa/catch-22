@@ -98,7 +98,7 @@ margin:4px 0px 0px 12px;
   width: calc(100% - 20px);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .footer-left, .footer-right{
@@ -111,7 +111,6 @@ margin:4px 0px 0px 12px;
   color:black;
   font-family:'Courier New', Courier, monospace;
   font-size: 13px;
-  margin-right: 25px;
 }
 
 .search-block {
@@ -140,7 +139,7 @@ margin:4px 0px 0px 12px;
   align-items: center;
 }
 
-.sign-in, .log-in{
+.sign_in, .log_in{
   font-size: 17px;
   color: white;
   margin-top: 4px;

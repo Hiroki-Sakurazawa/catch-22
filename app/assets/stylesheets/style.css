@@ -14,12 +14,19 @@ display: flex;
 align-items: flex-end;
 }
 
-.catch22{
-color:red;
+.catch22-white{
+color:white;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 font-size: 36px;
 margin:4px 0px 0px 12px;
 }
+
+.catch22-red{
+  color:red;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 36px;
+  margin:4px 0px 0px 12px;
+  }
 
 .alien-logo{
   margin-bottom: 3px;

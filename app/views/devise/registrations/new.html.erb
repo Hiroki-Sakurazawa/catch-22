@@ -1,5 +1,5 @@
 <div class="contents">
-  <div class="container">
+  <div class="container-registration">
     <h2 class="registration">新規登録</h2>
     <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
       <%= devise_error_messages! %>
@@ -14,7 +14,7 @@
 
       <div class="field">
         <div class='form-text-wrap'>
-        <label class="user-form-text"">メールアドレス</label>
+        <label class="user-form-text">メールアドレス</label>
         <span class="necessary">必須</span>
         </div>
         <%= f.email_field :email, class: "user_input_form" %>
@@ -36,8 +36,8 @@
         <%= f.password_field :password_confirmation, autocomplete: "off", class: "user_input_form" %>
       </div>
 
-      <div class="actions">
-        <%= f.submit "登録" %>
+      <div>
+        <%= f.submit "登録", class: "user_submit" %>
       </div>
     <% end %>
   </div>

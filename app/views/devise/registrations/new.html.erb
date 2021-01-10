@@ -1,39 +1,39 @@
 <div class="contents">
   <div class="container">
-    <h2>新規登録</h2>
+    <h2 class="registration">新規登録</h2>
     <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
       <%= devise_error_messages! %>
 
       <div class="field">
         <div class='form-text-wrap'>
-        <label class="form-text">ニックネーム</label>
-        <span class="indispensable">必須</span>
+        <label class="user-form-text">ニックネーム</label>
+        <span class="necessary">必須</span>
         </div>
-        <%= f.text_field :nickname, autofocus: true, class: "input_form" %>
+        <%= f.text_field :nickname, autofocus: true, class: "user_input_form" %>
       </div>
 
       <div class="field">
         <div class='form-text-wrap'>
-        <label class="form-text">メールアドレス</label>
-        <span class="indispensable">必須</span>
+        <label class="user-form-text"">メールアドレス</label>
+        <span class="necessary">必須</span>
         </div>
-        <%= f.email_field :email, class: "input_form" %>
+        <%= f.email_field :email, class: "user_input_form" %>
       </div>
 
       <div class="field">
         <div class='form-text-wrap'>
-        <label class="form-text">パスワード</label>
-        <span class="indispensable">必須</span>
+        <label class="user-form-text"">パスワード</label>
+        <span class="necessary">必須</span>
         </div>
-        <%= f.password_field :password, autocomplete: "off", class: "input_form" %>
+        <%= f.password_field :password, autocomplete: "off", class: "user_input_form" %>
       </div>
 
       <div class="field">
         <div class='form-text-wrap'>
-        <label class="form-text">パスワード(確認)</label>
-        <span class="indispensable">必須</span>
+        <label class="user-form-text"">パスワード(確認)</label>
+        <span class="necessary">必須</span>
         </div>
-        <%= f.password_field :password_confirmation, autocomplete: "off", class: "input_form" %>
+        <%= f.password_field :password_confirmation, autocomplete: "off", class: "user_input_form" %>
       </div>
 
       <div class="actions">

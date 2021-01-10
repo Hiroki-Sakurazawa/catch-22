@@ -134,15 +134,31 @@ margin:4px 0px 0px 12px;
   justify-content: space-around;
 }
 
-.sign-in-box, .log-in-box{
+.right-box{
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-color:#414141;
+  padding: 3px 10px;
+  border-radius: 2px;
+  width: 100px;
 }
 
-.sign_in, .log_in{
-  font-size: 17px;
+.left-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#414141;
+  padding: 3px 10px;
+  border-radius: 2px;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.left_text, .right_text{
+  font-size: 16px;
   color: white;
-  margin-top: 4px;
+  text-decoration: none;
 }
 
 .search-block3{
@@ -177,7 +193,7 @@ margin:4px 0px 0px 12px;
   height: 29px;
   border: 0;
   cursor: pointer;
-  background-color: rgb(36, 36, 36);
+  background-color: #414141;
   padding: 7px 0px;
 }
 

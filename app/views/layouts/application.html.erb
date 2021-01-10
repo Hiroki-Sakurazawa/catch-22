@@ -17,25 +17,34 @@
       </div>
       <% end %>
       <div class="search-block">
-      <div class="search-block1">
-        <%= form_with(url: "#", local: true, method: :get, class: "search-form") do |form| %>
-        <%= form.text_field :keyword, placeholder: "検索", class: "input-box" %>
-        <button class="search-button">
-        <%= image_submit_tag "search.png", class:"search-image" %>
-        </button>
+        <div class="search-block1">
+          <%= form_with(url: "#", local: true, method: :get, class: "search-form") do |form| %>
+          <%= form.text_field :keyword, placeholder: "検索", class: "input-box" %>
+          <button class="search-button">
+            <%= image_submit_tag "search.png", class:"search-image" %>
+          </button>
+          <%end%>
+        </div>
+        <div class="search-block2">
+        <% if user_signed_in? %>
+          <div class="left-box">
+            <%= link_to current_user.nickname, "#", class: "left_text" %>
+          </div>
+          <div class="right-box">
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "right_text" %>
+          </div>
+        <%else%>
+          <div class="left-box">
+            <%= link_to "ログイン", new_user_session_path, class: "left_text" %>
+          </div>
+          <div class="right-box">
+            <%= link_to "新規登録", new_user_registration_path, class: "right_text" %>
+          </div>
         <%end%>
-      </div>
-      <div class="search-block2">
-      <div class="sign-in-box">
-        <%= link_to "ログイン", new_user_session_path, class: "log_in" %>
-      </div>
-      <div class="log-in-box">
-        <%= link_to "新規登録", new_user_registration_path, class: "sign_in" %>
-      </div>
-      </div>
-      <div class="search-block3">
-        <p class="site-info">オカルト情報投稿マガジン Catch22</p>
-      </div>
+        </div>
+        <div class="search-block3">
+          <p class="site-info">オカルト情報投稿マガジン Catch22</p>
+        </div>
       </div>
     </header>
     <main class="main">

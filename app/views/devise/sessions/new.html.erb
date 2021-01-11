@@ -2,6 +2,10 @@
   <div class="container-session">
     <h2 class="session">ユーザー情報</h2>
     <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %>
+    <div class='login-flash'>
+      <%= flash[:notice] %>
+      <%= flash[:alert] %>
+    </div>
       <div class="field">
         <div class='form-text-wrap'>
         <label class="user-form-text">メールアドレス</label>

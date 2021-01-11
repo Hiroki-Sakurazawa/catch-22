@@ -1,15 +1,15 @@
 .header{
-  background-color: #414141;
+  background-color:black;
   height: 50px;
   width: 100vw;
   display: flex;
 }
 
-.title-block-link{
+.header-left-link{
   text-decoration: none;
 }
 
-.title-block{
+.header-left{
 display: flex;
 align-items: flex-end;
 }
@@ -33,13 +33,11 @@ margin:4px 0px 0px 12px;
 }
 
 .sub-header{
-  width: 100vw;
-  height: 30px;
   display: flex;
 }
 
 .genre-bar{
-  width: calc(100% - 200px);
+  width: calc(100vw - 200px);
   display: flex;
 }
 
@@ -82,16 +80,13 @@ margin:4px 0px 0px 12px;
 }
 
 .footer{
-  background-color: white;
-  height: 35px;
-  width: 100vw;
   display: flex;
 }
 
 .footer-center{
   border-top: 1px solid grey;
   height: 35px;
-  width: calc(100% - 20px);
+  width: calc(100vw - 20px);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -103,17 +98,17 @@ margin:4px 0px 0px 12px;
 }
 
 .copyright{
-  color:black;
+  color:  #414141;
   font-family:'Courier New', Courier, monospace;
   font-size: 13px;
 }
 
-.search-block {
+.header-right {
   display: flex;
   width: 100%;
 }
 
-.search-block1{
+.search-bar{
   width: 58%;
   height: 50px;
   display: flex;
@@ -121,7 +116,7 @@ margin:4px 0px 0px 12px;
   align-items: center;
 }
 
-.search-block2{
+.login-bar{
   width: 22%;
   height: 50px;
   display: flex;
@@ -156,7 +151,7 @@ margin:4px 0px 0px 12px;
   text-decoration: none;
 }
 
-.search-block3{
+.site-info-bar{
   width: 20%;
   height: 50px;
   display: flex;
@@ -165,7 +160,7 @@ margin:4px 0px 0px 12px;
 }
 
 .site-info{
-  font-size: 12px;
+  font-size: 13px;
   color:grey;
   margin-top: 2px;
 }
@@ -203,11 +198,8 @@ margin:4px 0px 0px 12px;
 }
 
 body{
-  height: 100vh;
-  background-color: lightgrey;
+  background-color:white;
 }
-
---------------------------
 
 .contents{
   width: 100%;
@@ -283,7 +275,17 @@ body{
 }
 
 .test{
-  width: 300px;
+  width: 295px;
   height: 200px;
-  background-color: lightblue;
+  background-color: #cdf3ff;
+  border-bottom: 1px solid grey;
+  margin: 10px 0px 10px 8px;
+}
+
+.box{
+  display: flex;
+}
+
+body {
+  overflow-x: hidden;
 }

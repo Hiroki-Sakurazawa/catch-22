@@ -10,8 +10,8 @@
   </head>
   <body>
     <header class="header">
-      <%= link_to root_path, class: "title-block-link", method: :get do %>
-      <div class="title-block">
+      <%= link_to root_path, class: "header-left-link", method: :get do %>
+      <div class="header-left">
       <% if user_signed_in? %>
         <h1 class="catch22-red">Catch22</h1>
         <%= image_tag 'alien_red.png', size: '40x40' ,class: "alien-logo" %>
@@ -21,8 +21,8 @@
       <%end%>
       </div>
       <% end %>
-      <div class="search-block">
-        <div class="search-block1">
+      <div class="header-right">
+        <div class="search-bar">
           <%= form_with(url: "#", local: true, method: :get, class: "search-form") do |form| %>
           <%= form.text_field :keyword, placeholder: "検索", class: "input-box" %>
           <button class="search-button">
@@ -30,7 +30,7 @@
           </button>
           <%end%>
         </div>
-        <div class="search-block2">
+        <div class="login-bar">
         <% if user_signed_in? %>
           <div class="left-box">
             <%= link_to current_user.nickname, "#", class: "left_text" %>
@@ -47,7 +47,7 @@
           </div>
         <%end%>
         </div>
-        <div class="search-block3">
+        <div class="site-info-bar">
           <p class="site-info">オカルト情報投稿マガジン Catch22</p>
         </div>
       </div>

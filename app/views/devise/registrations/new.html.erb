@@ -2,7 +2,7 @@
   <div class="container-registration">
     <h2 class="registration">新規登録</h2>
     <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
-      <%= devise_error_messages! %>
+    <%= render 'shared/error_messages', model: f.object %>
 
       <div class="field">
         <div class='form-text-wrap'>

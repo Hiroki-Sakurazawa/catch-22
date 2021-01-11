@@ -128,7 +128,7 @@ margin:4px 0px 0px 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:#414141;
+  background-color:#5c5c5c;
   padding: 3px 8px;
   border-radius: 2px;
   width: 100px;
@@ -138,7 +138,7 @@ margin:4px 0px 0px 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:#414141;
+  background-color: #5c5c5c;
   padding: 3px 8px;
   border-radius: 2px;
   width: 100px;
@@ -161,7 +161,7 @@ margin:4px 0px 0px 12px;
 
 .site-info{
   font-size: 13px;
-  color:grey;
+  color:lightgrey;
   margin-top: 2px;
 }
 
@@ -183,7 +183,7 @@ margin:4px 0px 0px 12px;
   height: 29px;
   border: 0;
   cursor: pointer;
-  background-color: #414141;
+  background-color: #5c5c5c;
   padding: 7px 0px;
 }
 

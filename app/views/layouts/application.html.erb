@@ -64,9 +64,11 @@
         </div>
         <div class="genre-bar-left"></div>
       </div>
-      <div class="post-bar">
-        <p class="post">投稿する</p>
+      <%= link_to new_picture_path, class: "contribute-link", method: :get do%>
+      <div class="contribute-bar">
+        <p class="contribute-btn">投稿する</p>
       </div>
+      <%end%>
     </div>
     <%= yield %>
     <footer class="footer">

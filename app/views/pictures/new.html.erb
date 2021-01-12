@@ -1,0 +1,28 @@
+<div class="contents">
+  <div class="container-contribute">
+    <h2 class="contribute">記事投稿</h2>
+    <%= form_with model: @picture, local: true do |f| %>
+    <%= render 'shared/error_messages', model: f.object %>
+
+      <div class="field">
+        <div class='form-text-wrap'>
+        <label class="user-form-text">タイトル</label>
+        <span class="necessary">必須</span>
+        </div>
+        <%= f.text_field :title, autofocus: true, placeholder: "", class: "user_input_form" %>
+      </div>
+
+      <div class="field">
+        <div class='form-text-wrap'>
+        <label class="user-form-text">記事内容</label>
+        <span class="necessary">必須</span>
+        </div>
+        <%= f.text_area :text, placeholder: "", class: "user_input_form" %>
+      </div>
+
+      <div>
+        <%= f.submit "投稿する", class: "user_submit" %>
+      </div>
+    <% end %>
+  </div>
+</div>  

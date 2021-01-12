@@ -32,6 +32,8 @@ margin:4px 0px 0px 12px;
   margin-bottom: 3px;
 }
 
+/* ヘッダー右部分 */
+
 .header-right {
   display: flex;
   width: 100%;
@@ -287,7 +289,7 @@ body{
   border: 1px solid grey;
   border-radius: 2px;
   padding: 1px;
-  font-weight: normal;
+  color: #414141;
 }
 
 .user_submit{

@@ -73,6 +73,10 @@ margin:4px 0px 0px 12px;
   border-radius: 2px;
 }
 
+.post-bar:hover {
+  background-color:#ff5353;
+}
+
 .post{
   color: white;
   font-size: 17px;
@@ -170,7 +174,7 @@ margin:4px 0px 0px 12px;
   height: 25px;
   display: flex;
   margin-bottom: 2.5px;
-  margin-left: 18px;
+  margin-left: 10px;
 }
 
 .input-box {
@@ -259,6 +263,11 @@ body{
   color: white;
   margin-top: 10px;
   border-radius: 2px;
+  cursor: pointer;
+}
+
+.user_submit:hover {
+  background-color:#ff5353;
 }
 
 .login-flash{

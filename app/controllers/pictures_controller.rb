@@ -1,5 +1,5 @@
 class PicturesController < ApplicationController
-  before_action :move_to_index, except: [:index, :new]
+  before_action :move_to_index, except: [:index, :show]
 
   def index
     @pictures = Picture.all.order('created_at DESC')
@@ -10,7 +10,13 @@ class PicturesController < ApplicationController
   end
 
   def create
-    Picture.create(picture_params)
+    @picture = Picture.new(picture_params)
+    if @picture.valid?
+      @picture.save
+      redirect_to action: :index
+    else
+      render :new
+    end
   end
   
   private

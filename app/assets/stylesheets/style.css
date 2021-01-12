@@ -281,6 +281,15 @@ body{
   padding: 1px;
 }
 
+.text-input-form{
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid grey;
+  border-radius: 2px;
+  padding: 1px;
+  font-weight: normal;
+}
+
 .user_submit{
   height: 50px;
   width: 100%;

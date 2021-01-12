@@ -6,6 +6,14 @@
 
       <div class="field">
         <div class='form-text-wrap'>
+        <label class="user-form-text">画像</label>
+        <span class="necessary">必須</span>
+        </div>
+        <%= f.file_field :image, id:"take-image", class:"take-image" %>
+      </div>
+
+      <div class="field">
+        <div class='form-text-wrap'>
         <label class="user-form-text">タイトル</label>
         <span class="necessary">必須</span>
         </div>

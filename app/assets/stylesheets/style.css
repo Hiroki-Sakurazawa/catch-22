@@ -199,6 +199,7 @@ margin:4px 0px 0px 12px;
 
 body{
   background-color:white;
+  overflow-x: hidden;
 }
 
 .contents{
@@ -260,26 +261,24 @@ body{
   border-radius: 2px;
 }
 
-.test{
-  width: 295px;
-  height: 200px;
-  background-color: #cdf3ff;
-  border-bottom: 1px solid grey;
-  margin: 10px 0px 10px 8px;
-}
-
-.box{
-  display: flex;
-}
-
-body {
-  overflow-x: hidden;
-}
-
 .login-flash{
   font-size: 1vw;
   color: #414141;
   display: flex;
   justify-content: center;
   margin-bottom: 3vh;
+}
+
+.pictures{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.picture{
+  width: 295px;
+  height: 200px;
+  background-color: #cdf3ff;
+  border-bottom: 1px solid grey;
+  margin: 10px 0px 10px 10px;
 }

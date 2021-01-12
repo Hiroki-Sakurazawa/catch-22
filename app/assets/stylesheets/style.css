@@ -192,6 +192,8 @@ margin:4px 0px 0px 12px;
   font-weight: bold;
 }
 
+/* フッター部分 */
+
 .footer{
   display: flex;
 }
@@ -226,7 +228,7 @@ body{
   overflow-x: hidden;
 }
 
-/* 入力部品 */
+/* 入力部分 */
 
 .contents{
   display: flex;

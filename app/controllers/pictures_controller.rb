@@ -9,7 +9,16 @@ class PicturesController < ApplicationController
     @picture = Picture.new
   end
 
+  def create
+    Picture.create(picture_params)
+  end
+  
+  private
   def move_to_index
     redirect_to action: :index unless user_signed_in?
+  end
+
+  def picture_params
+    params.require(:picture).permit(:image, :title, :text).merge(user_id: current_user.id)
   end
 end

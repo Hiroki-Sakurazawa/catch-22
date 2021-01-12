@@ -2,6 +2,7 @@ class PicturesController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
   def index
+    @pictures = Picture.all.order('created_at DESC')
   end
 
   def move_to_index

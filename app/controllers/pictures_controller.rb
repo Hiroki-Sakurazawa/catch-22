@@ -1,5 +1,5 @@
 class PicturesController < ApplicationController
-  before_action :move_to_index, except: [:index, :new]
+  before_action :move_to_index, except: [:index, :new, :show]
   before_action :authenticate_user!, only: :new
 
   def index
@@ -18,6 +18,10 @@ class PicturesController < ApplicationController
     else
       render :new
     end
+  end
+
+  def show
+    @picture = Picture.find(params[:id])
   end
   
   private

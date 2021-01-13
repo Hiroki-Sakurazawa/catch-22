@@ -1,5 +1,6 @@
 class PicturesController < ApplicationController
-  before_action :move_to_index, except: [:index, :show]
+  before_action :move_to_index, except: [:index, :new]
+  before_action :authenticate_user!, only: :new
 
   def index
     @pictures = Picture.all.order('created_at DESC')

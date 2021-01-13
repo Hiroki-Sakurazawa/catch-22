@@ -12,13 +12,8 @@
     <header class="header">
       <%= link_to root_path, class: "header-left-link", method: :get do %>
       <div class="header-left">
-      <% if user_signed_in? %>
-        <h1 class="catch22-red">Catch22</h1>
-        <%= image_tag 'alien_red.png', size: '40x40' ,class: "alien-logo" %>
-      <%else%>
         <h1 class="catch22-white">Catch22</h1>
         <%= image_tag 'alien.png', size: '40x40' ,class: "alien-logo" %>
-      <%end%>
       </div>
       <% end %>
       <div class="header-right">
@@ -71,6 +66,7 @@
       <%end%>
     </div>
     <%= yield %>
+    <div class="banner"></div>
     <footer class="footer">
     <div class="footer-left"></div>
     <div class="footer-center"><p class="copyright">Copyright ©️ 2021 Catch22.</p></div>

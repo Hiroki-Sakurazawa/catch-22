@@ -339,17 +339,37 @@ body{
 .picture{
   width: 295px;
   height: 200px;
-  background-color: #cdf3ff;
+  background-color: white;
   border-bottom: 1px solid grey;
   margin: 10px 0px 10px 10px;
+  box-sizing: border-box;
+  padding: 5px 0px 10px 5px;
+}
+
+.title-bar{
+  height: 25px;
+  background-color: #cdf3ff;
+  overflow: hidden;
+}
+
+.text-bar{
+  background-color: grey;
+  height: 50px;
+  overflow: hidden;
 }
 
 .picture-image{
   width: 150px;
   height: 100px;
-  background-color: white;
+  background-color:#cdf3ff;
 }
 
-.picture-text-bar{
+.image-info-bar{
   display: flex;
+  height: calc(100% - 75px);
+}
+
+.image-box{
+  display: flex;
+  align-items: flex-end;
 }

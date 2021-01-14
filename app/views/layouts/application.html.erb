@@ -66,7 +66,11 @@
       <%end%>
     </div>
     <%= yield %>
-    <div class="comment-bar"><p class="comment-btn">コメントする</p></div>
+    <div class="fixed-bar"><p class="site-info2">オカルト情報投稿マガジンCatch22</p></div>
+    <%= link_to new_picture_path, class: "contribute-link", method: :get do%>
+    <div class="contribute-bar2"><p class="contribute-btn">投稿する</p></div>
+    <%end%>
+    <div class="comment-bar"><p class="comment-btn">削除する</p></div>
     <footer class="footer">
     <div class="footer-left"></div>
     <div class="footer-center"><p class="copyright">Copyright ©️ 2021 Catch22.</p></div>

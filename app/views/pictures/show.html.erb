@@ -16,7 +16,14 @@
       </div>
     </div>
     <div class="show-image-box"><%= image_tag @picture.image, class: "big-image" %></div>
-    <div class="show-text-box"><%= @picture.text %></div>
+    <div class="show-text-box">
+    <%= @picture.text %>
+    <% if user_signed_in? %>
+      <% if current_user.id == @picture.user.id%>
+        <div class="destroy-box"><%= link_to '記事を削除する', picture_path(@picture.id), method: :delete, class:'destroy-btn' %></div>
+      <%end%>
+    <%end%>
+    </div>
   </div>
   <div class="show-right-block"></div>
 </div>

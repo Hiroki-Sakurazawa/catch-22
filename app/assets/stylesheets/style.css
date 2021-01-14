@@ -102,6 +102,12 @@ margin:4px 0px 0px 12px;
   margin-top: 2px;
 }
 
+.site-info2{
+  font-size: 12px;
+  color:lightgrey;
+  margin-top: 2px;
+}
+
 /* 検索バー */
 
 .search-bar{
@@ -180,6 +186,18 @@ margin:4px 0px 0px 12px;
   color:grey;
 }
 
+.fixed-bar{
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: #414141;
+}
+
 .contribute-link{
   text-decoration: none;
 }
@@ -194,7 +212,20 @@ margin:4px 0px 0px 12px;
   border-radius: 2px;
 }
 
-.contribute-bar:hover {
+.contribute-bar2{
+  width: 200px;
+  height: 30px;
+  background-color:red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  position: fixed;
+  top: 50px;
+  right: 0px;
+}
+
+.contribute-bar, .contribute-bar2:hover {
   background-color:#ff5353;
 }
 
@@ -208,13 +239,14 @@ margin:4px 0px 0px 12px;
   width: 200px;
   height: 30px;
   background-color: #5c5c5c;
-  position: absolute;
+  position: fixed;
   top: 80px;
   right: 0px;
   border-radius: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
+  display:none;
 }
 
 .comment-bar:hover {
@@ -467,12 +499,12 @@ body{
 }
 
 .show-left-block{
-  width: 280px;
+  width: 290px;
   background-color: white;
 }
 
 .show-right-block{
-  width: calc(100vw - 1030px);
+  width: calc(100vw - 1040px);
   background-color: white;
 }
 
@@ -481,7 +513,7 @@ body{
   font-size: 32px;
   font-weight: bold;
   width: 750px;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .show-info-box{
@@ -507,11 +539,28 @@ body{
 .show-text-box{
   width: 750px;
   margin-top: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   color:black;
   font-size: 16px;
 }
 
 .show-contributor-box, .show-date-box{
   display: flex;
+}
+
+.destroy-box{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  margin-right: 2px;
+}
+
+.destroy-btn{
+  font-size: 13px;
+  background-color:#5c5c5c;
+  color: white;
+  border-radius: 2px;
+  padding: 2px 2px 0px;
+  margin-bottom: 1px;
+  text-decoration: none;
 }

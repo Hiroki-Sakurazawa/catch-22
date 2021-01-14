@@ -20,6 +20,16 @@ class PicturesController < ApplicationController
     end
   end
 
+  def destroy
+    picture = Picture.find(params[:id])
+    if current_user.id == picture.user.id
+      picture.destroy
+      redirect_to action: :index
+    else
+      redirect_to action: :index
+    end
+  end
+
   def show
     @picture = Picture.find(params[:id])
   end

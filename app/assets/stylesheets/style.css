@@ -108,6 +108,18 @@ margin:4px 0px 0px 12px;
   margin-top: 2px;
 }
 
+.fixed-bar{
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: #414141;
+}
+
 /* 検索バー */
 
 .search-bar{
@@ -184,18 +196,6 @@ margin:4px 0px 0px 12px;
 
 .genre:hover {
   color:grey;
-}
-
-.fixed-bar{
-  width: 200px;
-  height: 50px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  background-color: #414141;
 }
 
 .contribute-link{

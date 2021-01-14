@@ -66,7 +66,9 @@
       <%end%>
     </div>
     <%= yield %>
+    <%= link_to root_path, class: "fixed-bar-link", method: :get do%>
     <div class="fixed-bar"><p class="site-info2">オカルト情報投稿マガジンCatch22</p></div>
+    <%end%>
     <%= link_to new_picture_path, class: "contribute-link", method: :get do%>
     <div class="contribute-bar2"><p class="contribute-btn">投稿する</p></div>
     <%end%>

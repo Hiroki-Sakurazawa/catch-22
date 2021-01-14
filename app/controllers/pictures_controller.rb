@@ -33,7 +33,20 @@ class PicturesController < ApplicationController
   def show
     @picture = Picture.find(params[:id])
   end
-  
+
+  def edit
+    @picture = Picture.find(params[:id])
+  end
+
+  def update
+    @picture = Picture.find(params[:id])
+    if @picture.update(picture_params)
+      redirect_to action: :show
+    else
+      render :edit
+    end
+  end
+
   private
   def move_to_index
     redirect_to action: :index unless user_signed_in?

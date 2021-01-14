@@ -441,6 +441,15 @@ body{
   margin-right: 3px;
 }
 
+.show-new{
+  color:red;
+  font-size: 13px;
+  font-weight: bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-right: 3px;
+  margin-top: 1px;
+}
+
 .date{
   font-size: 14px;
   color: #363636;
@@ -477,8 +486,11 @@ body{
 
 .show-info-box{
   width: 750px;
-  height: 50px;
+  height: 40px;
   border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .show-image-box{
@@ -496,4 +508,8 @@ body{
   width: 750px;
   margin-top: 40px;
   margin-bottom: 50px;
+}
+
+.show-contributor-box, .show-date-box{
+  display: flex;
 }

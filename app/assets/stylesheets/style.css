@@ -430,7 +430,15 @@ body{
   justify-content: flex-end;
   align-items: flex-end;
   box-sizing: border-box;
-  padding-right: 1px;
+  padding-right: 2px;
+}
+
+.new{
+  color:red;
+  font-size: 13px;
+  font-weight: bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-right: 3px;
 }
 
 .date{

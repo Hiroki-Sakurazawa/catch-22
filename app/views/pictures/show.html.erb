@@ -4,13 +4,13 @@
     <div class="show-title-box"><%= @picture.title %></div>
     <div class="show-info-box">
       <div class="show-contributor-box">
-        <p class="contributor">ジャンル</p><p class="contributor-name2"><%= @picture.user.nickname %></p>
+        <p class="contributor2">ジャンル</p><p class="contributor-name2"><%= @picture.user.nickname %></p>
       </div>
       <div class="show-date-box">
         <% if Date.current.strftime('%Y.%m.%d') == @picture.created_at.strftime('%Y.%m.%d')%>
         <p class="show-new">NEW</p>
         <%end%>
-        <p class="date">
+        <p class="show-date">
         <%= @picture.created_at.strftime('%Y.%m.%d %H:%M') %>
         </p>
       </div>

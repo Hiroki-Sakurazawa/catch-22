@@ -4,22 +4,25 @@
     <div class="show-title-box"><%= @picture.title %></div>
     <div class="show-info-box">
       <div class="show-contributor-box">
-        <p class="contributor">投稿者</p><p class="contributor-name"><%= @picture.user.nickname %></p>
+        <p class="contributor">ジャンル</p><p class="contributor-name2"><%= @picture.user.nickname %></p>
       </div>
       <div class="show-date-box">
         <% if Date.current.strftime('%Y.%m.%d') == @picture.created_at.strftime('%Y.%m.%d')%>
         <p class="show-new">NEW</p>
         <%end%>
         <p class="date">
-        <%= @picture.created_at.strftime('%Y.%m.%d.%H.%M') %>
+        <%= @picture.created_at.strftime('%Y.%m.%d %H:%M') %>
         </p>
       </div>
     </div>
     <div class="show-image-box"><%= image_tag @picture.image, class: "big-image" %></div>
     <div class="show-text-box">
     <%= @picture.text %>
+    </div>
+    <div class="show-btn-box">
     <% if user_signed_in? %>
       <% if current_user.id == @picture.user.id%>
+        <div class="edit-box"><%= link_to '記事を編集する', edit_picture_path(@picture.id), method: :get, class:'edit-btn' %></div>
         <div class="destroy-box"><%= link_to '記事を削除する', picture_path(@picture.id), method: :delete, class:'destroy-btn' %></div>
       <%end%>
     <%end%>

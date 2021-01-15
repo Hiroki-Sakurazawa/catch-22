@@ -445,28 +445,11 @@ body{
   margin-bottom: 3px;
 }
 
-.contributor2{
-  font-size: 14px;
-  background-color:lightgrey;
-  color:black;
-  padding: 2px 2px 0px;
-  margin-bottom: 3px;
-}
-
 .contributor-name{
   font-size: 13px;
   background-color:lightgrey;
   color: black;
   padding: 2px 2px 0px;
-}
-
-.contributor-name2{
-  height: fit-content;
-  font-size: 14px;
-  background-color:lightgrey;
-  color: black;
-  padding: 2px 2px 0px;
-  margin-left: 3px;
 }
 
 .date-box{
@@ -530,7 +513,7 @@ body{
 
 .show-title-box{
   color: black;
-  font-size: 32px;
+  font-size: 33px;
   font-weight: bold;
   width: 750px;
   margin-top: 25px;
@@ -543,6 +526,31 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.show-contributor-name-link{
+  text-decoration: none;
+}
+
+.show-contributor{
+  font-size: 14px;
+  background-color:lightgrey;
+  color:black;
+  padding: 2px 2px 0px;
+  margin-bottom: 3px;
+}
+
+.show-contributor-name{
+  height: fit-content;
+  font-size: 14px;
+  background-color:lightgrey;
+  color: black;
+  padding: 2px 2px 0px;
+  margin-left: 3px;
+}
+
+.show-contributor-name:hover{
+  background-color: white;
 }
 
 .show-image-box{

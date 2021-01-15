@@ -4,7 +4,10 @@
     <div class="show-title-box"><%= @picture.title %></div>
     <div class="show-info-box">
       <div class="show-contributor-box">
-        <p class="contributor2">ジャンル</p><p class="contributor-name2"><%= @picture.user.nickname %></p>
+        <p class="show-contributor">ジャンル</p>
+        <%=link_to user_path(@picture.user.id), class: "show-contributor-name-link", method: :get do %>
+        <p class="show-contributor-name"><%= @picture.user.nickname %></p>
+        <%end%>
       </div>
       <div class="show-date-box">
         <% if Date.current.strftime('%Y.%m.%d') == @picture.created_at.strftime('%Y.%m.%d')%>

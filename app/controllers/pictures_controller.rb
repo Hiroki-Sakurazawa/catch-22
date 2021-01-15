@@ -36,6 +36,9 @@ class PicturesController < ApplicationController
 
   def edit
     @picture = Picture.find(params[:id])
+    if current_user.id != @picture.user.id
+      redirect_to action: :index
+    end
   end
 
   def update

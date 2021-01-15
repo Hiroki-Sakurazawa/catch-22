@@ -4,6 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :pictures
+  has_many :comments
     validates :nickname,       presence: true, format: { with: /\A[a-z0-9ぁ-んァ-ン一-龥]+\z/ }, length: { maximum: 6 }
     validates :password,       format: { with: /\A[a-z0-9]+\z/i }
 end

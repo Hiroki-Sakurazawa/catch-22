@@ -22,14 +22,16 @@
     <div class="show-text-box">
     <%= @picture.text %>
     </div>
-    <div class="show-btn-box">
     <% if user_signed_in? %>
       <% if current_user.id == @picture.user.id%>
+      <div class="show-btn-box">
         <div class="edit-box"><%= link_to '記事を編集する', edit_picture_path(@picture.id), method: :get, class:'edit-btn' %></div>
         <div class="destroy-box"><%= link_to '記事を削除する', picture_path(@picture.id), method: :delete, class:'destroy-btn' %></div>
+      </div>
+      <%else%>
+        <div class="under-text-box"></div>
       <%end%>
     <%end%>
-    </div>
   </div>
   <div class="show-right-block"></div>
 </div>

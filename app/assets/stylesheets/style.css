@@ -60,7 +60,7 @@ margin:4px 0px 0px 12px;
 }
 
 .right-box:hover, .left-box:hover {
-  background-color:white;
+  background-color:#e6e6e6;
 }
 
 .left-box{
@@ -350,18 +350,18 @@ body{
 .user_submit{
   height: 50px;
   width: 100%;
-  background-color:#5c5c5c;
+  background-color:lightgrey;
   border: 0;
   font-size: 17px;
   font-weight: bold;
-  color: white;
+  color: #363636;
   margin-top: 10px;
   border-radius: 2px;
   cursor: pointer;
 }
 
 .user_submit:hover {
-  background-color: grey;
+  background-color: #e6e6e6;
 }
 
 /* ログインフラッシュ */
@@ -550,7 +550,7 @@ body{
 }
 
 .show-contributor-name:hover{
-  background-color: white;
+  background-color: #e6e6e6;
 }
 
 .show-image-box{
@@ -573,6 +573,10 @@ body{
   margin-top: 40px;
   color:black;
   font-size: 16px;
+}
+
+.under-text-box{
+  height: 45px;
 }
 
 .show-btn-box{

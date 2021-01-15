@@ -25,13 +25,35 @@
     <% if user_signed_in? %>
       <% if current_user.id == @picture.user.id%>
       <div class="show-btn-box">
-        <div class="edit-box"><%= link_to '記事を編集する', edit_picture_path(@picture.id), method: :get, class:'edit-btn' %></div>
-        <div class="destroy-box"><%= link_to '記事を削除する', picture_path(@picture.id), method: :delete, class:'destroy-btn' %></div>
+        <div class="edit-box"><%= link_to '記事を編集', edit_picture_path(@picture.id), method: :get, class:'edit-btn' %></div>
+        <div class="destroy-box"><%= link_to '記事を削除', picture_path(@picture.id), method: :delete, class:'destroy-btn' %></div>
       </div>
       <%else%>
         <div class="under-text-box"></div>
       <%end%>
     <%end%>
+    <div class="comment-box">
+      <% if user_signed_in? %>
+        <%= form_with(model: [@picture, @comment], local: true) do |form| %>
+          <%= form.text_area :text, class: "comment-form", rows: "2" %>
+          <div class="comment-submit-box">
+          <%= form.submit "コメント", class: "comment-submit"%>
+          </div>
+        <% end %>
+      <% else %>
+        <p class="comment-attention">コメントには新規登録/ログインが必要です</p>
+      <% end %>
+      <div class="comments">
+        <% @comments.each do |comment| %>
+          <div class="each-comment-box">
+            <%= link_to comment.user.nickname, user_path(comment.user_id), class:"comment-contributor" %>
+            <div class="comment-text">
+            <%= comment.text %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
   <div class="show-right-block"></div>
 </div>

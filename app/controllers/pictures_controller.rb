@@ -32,6 +32,8 @@ class PicturesController < ApplicationController
 
   def show
     @picture = Picture.find(params[:id])
+    @comment = Comment.new
+    @comments = @picture.comments.includes(:user)
   end
 
   def edit

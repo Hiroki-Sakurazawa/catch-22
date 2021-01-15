@@ -225,28 +225,10 @@ margin:4px 0px 0px 12px;
   background-color:#ff5353;
 }
 
-.contribute-btn, .comment-btn{
+.contribute-btn{
   color: white;
   font-size: 17px;
   font-weight: bold;
-}
-
-.comment-bar{
-  width: 200px;
-  height: 30px;
-  background-color: #5c5c5c;
-  position: fixed;
-  top: 80px;
-  right: 0px;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display:none;
-}
-
-.comment-bar:hover {
-  background-color:grey;
 }
 
 /* フッター部分 */
@@ -338,7 +320,7 @@ body{
   padding: 1px;
 }
 
-.text-input-form{
+.text-user-input-form{
   width: 100%;
   margin-bottom: 15px;
   border: 1px solid grey;
@@ -347,7 +329,7 @@ body{
   color: #414141;
 }
 
-.user_submit{
+.submit{
   height: 50px;
   width: 100%;
   background-color:lightgrey;
@@ -360,7 +342,7 @@ body{
   cursor: pointer;
 }
 
-.user_submit:hover {
+.submit:hover {
   background-color: #e6e6e6;
 }
 
@@ -511,6 +493,10 @@ body{
   background-color: white;
 }
 
+.show-center-block{
+  margin-bottom: 40px;
+}
+
 .show-title-box{
   color: black;
   font-size: 33px;
@@ -556,6 +542,7 @@ body{
 .show-image-box{
   background-color:grey;
   height: 500px;
+  width: 750px;
   margin-top: 30px;
 }
 
@@ -602,4 +589,61 @@ body{
   padding: 4px 2px 3px;
   margin-left: 3px;
   margin-right: 2px;
+}
+
+.edit-btn:hover, .destroy-btn:hover{
+  background-color: #e6e6e6;
+}
+
+/* コメント部分 */
+
+.comment-form{
+  width: 750px;
+  padding: 1px;
+}
+
+.comment-submit{
+  width: 100px;
+  height: 30px;
+  background-color: lightgrey;
+  border: 0px;
+  color: #363636;
+  font-size: 15px;
+}
+
+.comment-submit:hover{
+  background-color: #e6e6e6;
+}
+
+.comment-submit-box{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.each-comment-box{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.comment-contributor{
+  font-size: 13px;
+  background-color:lightgrey;
+  color: #363636;
+  padding: 2px 2px 0px;
+  margin-bottom: 3px;
+  width: fit-content;
+  text-decoration: none;
+  padding: 2px 4px 0px;
+}
+
+.comment-text{
+  width: 750px;
+  font-size: 14px;
+  color: black;
+  margin-top: 7px;
+}
+
+.comment-attention{
 }

@@ -1,0 +1,28 @@
+<div class="pictures">
+  <% @pictures.each do |picture| %>
+    <%= link_to picture_path(picture.id), class: "picture-link", method: :get do %>
+    <div class="picture">
+      <div class="title-bar">
+        <p class="title"><%= picture.title %></p>
+      </div>
+      <div class="text-bar"><p class="text"><%= picture.text %></p></div>
+      <div class="image-info-bar">
+        <div class="image-box"><%= image_tag picture.image, class: "small-image" %></div>
+        <div class="info-box">
+          <div class="contributor-box">
+            <p class="contributor">ジャンル</p><p class="contributor-name"><%= picture.user.nickname %></p>
+          </div>
+          <div class="date-box">
+            <% if Date.current.strftime('%Y.%m.%d') == picture.created_at.strftime('%Y.%m.%d')%>
+            <p class="new">NEW</p>
+            <%end%>
+            <p class="date">
+            <%= picture.created_at.strftime('%Y.%m.%d') %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%end%>
+  <% end %>
+</div>

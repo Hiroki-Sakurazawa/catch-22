@@ -60,7 +60,7 @@ margin:4px 0px 0px 12px;
 }
 
 .right-box:hover, .left-box:hover {
-  background-color:#e6e6e6;
+  background-color:white;
 }
 
 .left-box{
@@ -635,7 +635,7 @@ body{
   margin-bottom: 3px;
   width: fit-content;
   text-decoration: none;
-  padding: 2px 4px 0px;
+  padding: 3px 4px 0px;
 }
 
 .comment-text{

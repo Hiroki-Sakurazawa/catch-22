@@ -600,6 +600,7 @@ body{
 .comment-form{
   width: 750px;
   padding: 1px;
+  color: #414141;
 }
 
 .comment-submit{
@@ -630,7 +631,7 @@ body{
 .comment-contributor{
   font-size: 13px;
   background-color:lightgrey;
-  color: #363636;
+  color: black;
   padding: 2px 2px 0px;
   margin-bottom: 3px;
   width: fit-content;
@@ -645,5 +646,13 @@ body{
   margin-top: 7px;
 }
 
+.attention-box{
+  display: flex;
+  justify-content: flex-end;
+}
+
 .comment-attention{
+  color: #363636;
+  font-size: 14px;
+  margin-top: 20px;
 }

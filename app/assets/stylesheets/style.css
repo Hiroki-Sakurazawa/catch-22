@@ -487,12 +487,12 @@ body{
 }
 
 .show-left-block{
-  width: 290px;
+  width: 295px;
   background-color: white;
 }
 
 .show-right-block{
-  width: calc(100vw - 1040px);
+  width: calc(100vw - 1045px);
   background-color: white;
 }
 

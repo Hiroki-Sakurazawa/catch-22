@@ -1,5 +1,4 @@
 .header{
-  background-color:white;
   height: 50px;
   width: 100vw;
   display: flex;
@@ -174,7 +173,6 @@ margin:4px 0px 0px 12px;
 .genre-bar-center{
   width: calc(100% - 20px);
   height: 30px;
-  background-color: white;
   border-bottom: 1px solid grey;
   display: flex;
   justify-content: space-around;
@@ -182,7 +180,6 @@ margin:4px 0px 0px 12px;
 }
 
 .genre-bar-left, .genre-bar-right{
-  background-color: white;
   height: 30px;
   width: 10px;
 }
@@ -369,7 +366,6 @@ body{
 .picture{
   width: 295px;
   height: 190px;
-  background-color: white;
   border-bottom: 1px solid grey;
   margin: 5px 0px 10px 10px;
   box-sizing: border-box;
@@ -488,12 +484,10 @@ body{
 
 .show-left-block{
   width: 295px;
-  background-color: white;
 }
 
 .show-right-block{
   width: calc(100vw - 1045px);
-  background-color: white;
 }
 
 .show-center-block{

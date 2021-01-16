@@ -25,4 +25,9 @@
     </div>
     <%end%>
   <% end %>
+  <% if @pictures.length == 0 %>
+      <div class='no-pictures-box'>
+          <p class='no-pictures'>該当する記事はありませんでした。</p>
+      </div>
+  <% end %>
 </div>

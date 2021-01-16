@@ -13,7 +13,7 @@
       <%= link_to root_path, class: "header-left-link", method: :get do %>
       <div class="header-left">
         <h1 class="catch22-white">Catch22</h1>
-        <%= image_tag 'alien.png', size: '40x40' ,class: "alien-logo" %>
+        <%= image_tag 'alien-grey.png', size: '40x40' ,class: "alien-logo" %>
       </div>
       <% end %>
       <div class="header-right">
@@ -21,7 +21,7 @@
           <%= form_with(url: "#", local: true, method: :get, class: "search-form") do |form| %>
           <%= form.text_field :keyword, placeholder: "検索", class: "input-box" %>
           <button class="search-button">
-            <%= image_submit_tag "search.png", class:"search-image" %>
+            <%= image_submit_tag "search-grey.png", class:"search-image" %>
           </button>
           <%end%>
         </div>
@@ -67,10 +67,10 @@
     </div>
     <%= yield %>
     <%= link_to root_path, class: "fixed-bar-link", method: :get do%>
-    <div class="fixed-bar"><p class="site-info2">オカルト情報投稿マガジンCatch22</p></div>
+    <div class="fixed-bar"><p class="fixed-site-info">オカルト情報投稿マガジンCatch22</p></div>
     <%end%>
     <%= link_to new_picture_path, class: "contribute-link", method: :get do%>
-    <div class="contribute-bar2"><p class="contribute-btn">投稿</p></div>
+    <div class="fixed-contribute-bar"><p class="contribute-btn">投稿</p></div>
     <%end%>
     <footer class="footer">
     <div class="footer-left"></div>

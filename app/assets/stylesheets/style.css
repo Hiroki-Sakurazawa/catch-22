@@ -1,5 +1,5 @@
 .header{
-  background-color:#414141;
+  background-color:;
   height: 50px;
   width: 100vw;
   display: flex;
@@ -17,18 +17,11 @@ align-items: flex-end;
 }
 
 .catch22-white{
-color:white;
+color: grey;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 font-size: 36px;
 margin:4px 0px 0px 12px;
 }
-
-.catch22-red{
-  color:red;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 36px;
-  margin:4px 0px 0px 12px;
-  }
 
 .alien-logo{
   margin-bottom: 3px;
@@ -57,10 +50,11 @@ margin:4px 0px 0px 12px;
   justify-content: center;
   background-color: lightgrey;
   width: 100px;
+  border: 1px solid grey;
 }
 
 .right-box:hover, .left-box:hover {
-  background-color:white;
+  background-color:#e6e6e6;
 }
 
 .left-box{
@@ -70,6 +64,7 @@ margin:4px 0px 0px 12px;
   background-color: lightgrey;
   width: 100px;
   margin-right: 10px;
+  border: 1px solid grey;
 }
 
 .left_text, .right_text{
@@ -94,9 +89,9 @@ margin:4px 0px 0px 12px;
   margin-top: 2px;
 }
 
-.site-info2{
+.fixed-site-info{
   font-size: 12px;
-  color:lightgrey;
+  color: #363636;
   margin-top: 2px;
 }
 
@@ -109,11 +104,15 @@ margin:4px 0px 0px 12px;
   position: fixed;
   top: 0px;
   right: 0px;
-  background-color: #414141;
+  background-color:lightgrey;
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  box-sizing: border-box;
 }
 
 .fixed-bar:hover{
-  background-color: #5c5c5c;
+  background-color: #e6e6e6;
 }
 
 /* 検索バー */
@@ -143,13 +142,17 @@ margin:4px 0px 0px 12px;
   width: 50px;
   height: 29px;
   border: 0;
-  background-color: #5c5c5c;
-  padding: 7px 0px;
-  border-radius: 1px;
+  background-color:#c5c5c5;
+  padding: 6px 0px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  box-sizing: border-box;
+
 }
 
 .search-button:hover {
-  background-color:grey;
+  background-color: #e6e6e6;
 }
 
 .search-image {
@@ -208,20 +211,20 @@ margin:4px 0px 0px 12px;
   border-radius: 2px;
 }
 
-.contribute-bar2{
+.fixed-contribute-bar{
   width: 200px;
   height: 30px;
   background-color:red;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 2px;
+  border-radius: 0px;
   position: fixed;
   top: 50px;
   right: 0px;
 }
 
-.contribute-bar, .contribute-bar2:hover {
+.contribute-bar, .fixed-contribute-bar:hover {
   background-color:#ff5353;
 }
 
@@ -282,7 +285,7 @@ body{
   width: 21vw;
   padding: 40px 20px 50px;
   background-color: white;
-  border-radius: 2px;
+  border-radius: 0px;
   border: 1px solid grey;
 }
 
@@ -316,7 +319,7 @@ body{
   width: 100%;
   margin-bottom: 15px;
   border: 1px solid grey;
-  border-radius: 2px;
+  border-radius: 0px;
   padding: 1px;
 }
 
@@ -324,7 +327,7 @@ body{
   width: 100%;
   margin-bottom: 15px;
   border: 1px solid grey;
-  border-radius: 2px;
+  border-radius: 0px;
   padding: 1px;
   color: #414141;
 }
@@ -338,7 +341,7 @@ body{
   font-weight: bold;
   color: #363636;
   margin-top: 10px;
-  border-radius: 2px;
+  border-radius: 0px;
   cursor: pointer;
 }
 

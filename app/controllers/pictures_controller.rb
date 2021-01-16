@@ -33,7 +33,7 @@ class PicturesController < ApplicationController
   def show
     @picture = Picture.find(params[:id])
     @comment = Comment.new
-    @comments = @picture.comments.includes(:user)
+    @comments = @picture.comments.includes(:user).order('created_at DESC')
   end
 
   def edit

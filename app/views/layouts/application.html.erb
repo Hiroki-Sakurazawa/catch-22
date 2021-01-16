@@ -18,8 +18,8 @@
       <% end %>
       <div class="header-right">
         <div class="search-bar">
-          <%= form_with(url: "#", local: true, method: :get, class: "search-form") do |form| %>
-          <%= form.text_field :keyword, placeholder: "検索", class: "input-box" %>
+          <%= form_with(url: search_pictures_path, local: true, method: :get, class: "search-form") do |form| %>
+          <%= form.text_field :keyword, placeholder: "タイトルから検索", class: "input-box" %>
           <button class="search-button">
             <%= image_submit_tag "search-grey.png", class:"search-image" %>
           </button>

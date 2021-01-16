@@ -8,4 +8,12 @@ class Picture < ApplicationRecord
     validates :title
     validates :text
   end
+
+  def self.search(search)
+    if search != ""
+      Picture.where('title LIKE(?)', "%#{search}%")
+    else
+      Picture.all
+    end
+  end
 end

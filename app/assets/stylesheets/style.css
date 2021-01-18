@@ -428,7 +428,7 @@ body{
   width: 100%;
 }
 
-.contributor-box{
+.genre-contributor-box{
   height: 50%;
   padding-top: 8px;
   padding-left: 5px;
@@ -438,7 +438,7 @@ body{
   box-sizing: border-box;
 }
 
-.contributor{
+.genre2{
   font-size: 13px;
   background-color:lightgrey;
   color:black;
@@ -535,7 +535,7 @@ body{
   text-decoration: none;
 }
 
-.show-contributor{
+.show-genre{
   font-size: 14px;
   background-color:lightgrey;
   color:black;
@@ -568,7 +568,7 @@ body{
   height: 500px;
 }
 
-.show-contributor-box, .show-date-box{
+.show-genre-contributor-box, .show-date-box{
   display: flex;
 }
 

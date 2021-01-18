@@ -3,8 +3,8 @@
   <div class="show-center-block">
     <div class="show-title-box"><%= @picture.title %></div>
     <div class="show-info-box">
-      <div class="show-contributor-box">
-        <p class="show-contributor">ジャンル</p>
+      <div class="show-genre-contributor-box">
+        <p class="show-genre"><%=@picture.genre.name%></p>
         <%=link_to user_path(@picture.user.id), class: "show-contributor-name-link", method: :get do %>
         <p class="show-contributor-name"><%= @picture.user.nickname %></p>
         <%end%>

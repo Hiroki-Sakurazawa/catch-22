@@ -15,7 +15,7 @@ class Picture < ApplicationRecord
 
   def self.search(search)
     if search != ""
-      Picture.where('title LIKE(?)', "%#{search}%")
+      Picture.where('title LIKE(?)', "%#{search}%").or(Picture.where('text LIKE(?)', "%#{search}%"))
     else
       Picture.all
     end

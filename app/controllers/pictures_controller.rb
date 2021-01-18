@@ -56,6 +56,26 @@ class PicturesController < ApplicationController
     @pictures = Picture.search(params[:keyword]).order('created_at DESC')
   end
 
+  def bizarre
+    @pictures = Picture.where(genre_id: 1)
+  end
+
+  def alien
+    @pictures = Picture.where(genre_id: 2)
+  end
+
+  def uma
+    @pictures = Picture.where(genre_id: 3)
+  end
+
+  def myth
+    @pictures = Picture.where(genre_id: 4)
+  end
+
+  def ruin
+    @pictures = Picture.where(genre_id: 5)
+  end
+  
   private
   def move_to_index
     redirect_to action: :index unless user_signed_in?

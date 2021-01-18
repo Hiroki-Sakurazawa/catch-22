@@ -14,6 +14,14 @@
 
       <div class="field">
         <div class='form-text-wrap'>
+        <label class="user-form-text">ジャンル</label>
+        <span class="necessary">必須</span>
+        </div>
+        <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"genre-select"}) %>
+      </div>
+
+      <div class="field">
+        <div class='form-text-wrap'>
         <label class="user-form-text">タイトル</label>
         <span class="necessary">必須</span>
         </div>

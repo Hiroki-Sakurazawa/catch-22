@@ -62,6 +62,6 @@ class PicturesController < ApplicationController
   end
 
   def picture_params
-    params.require(:picture).permit(:image, :title, :text).merge(user_id: current_user.id)
+    params.require(:picture).permit(:image, :genre_id, :title, :text).merge(user_id: current_user.id)
   end
 end

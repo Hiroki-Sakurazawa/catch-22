@@ -53,6 +53,7 @@
 | title  | string | null: false |
 | text   | text   | null: false |
 | user   | references | foreign_key: true |
+| genre_id   | integer   | null: false |
 
 ### Association
 

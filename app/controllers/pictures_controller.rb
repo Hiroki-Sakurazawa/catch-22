@@ -57,23 +57,23 @@ class PicturesController < ApplicationController
   end
 
   def bizarre
-    @pictures = Picture.where(genre_id: 1)
+    @pictures = Picture.where(genre_id: 1).order('created_at DESC')
   end
 
   def alien
-    @pictures = Picture.where(genre_id: 2)
+    @pictures = Picture.where(genre_id: 2).order('created_at DESC')
   end
 
   def uma
-    @pictures = Picture.where(genre_id: 3)
+    @pictures = Picture.where(genre_id: 3).order('created_at DESC')
   end
 
   def myth
-    @pictures = Picture.where(genre_id: 4)
+    @pictures = Picture.where(genre_id: 4).order('created_at DESC')
   end
 
   def ruin
-    @pictures = Picture.where(genre_id: 5)
+    @pictures = Picture.where(genre_id: 5).order('created_at DESC')
   end
   
   private

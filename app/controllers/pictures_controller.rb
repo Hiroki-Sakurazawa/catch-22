@@ -38,9 +38,7 @@ class PicturesController < ApplicationController
 
   def edit
     @picture = Picture.find(params[:id])
-    if current_user.id != @picture.user.id
-      redirect_to action: :index
-    end
+    redirect_to action: :index if current_user.id != @picture.user.id
   end
 
   def update
@@ -75,8 +73,9 @@ class PicturesController < ApplicationController
   def ruin
     @pictures = Picture.where(genre_id: 5).order('created_at DESC')
   end
-  
+
   private
+
   def move_to_index
     redirect_to action: :index unless user_signed_in?
   end

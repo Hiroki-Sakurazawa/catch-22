@@ -4,8 +4,8 @@ class Picture < ApplicationRecord
   has_one_attached :image
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :genre
-  
-  validates :genre_id, numericality: {other_than: 0}
+
+  validates :genre_id, numericality: { other_than: 0 }
 
   with_options presence: true do
     validates :image
@@ -14,7 +14,7 @@ class Picture < ApplicationRecord
   end
 
   def self.search(search)
-    if search != ""
+    if search != ''
       Picture.where('title LIKE(?)', "%#{search}%").or(Picture.where('text LIKE(?)', "%#{search}%"))
     else
       Picture.all

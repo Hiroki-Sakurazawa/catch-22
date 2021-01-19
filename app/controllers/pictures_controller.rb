@@ -1,5 +1,5 @@
 class PicturesController < ApplicationController
-  before_action :move_to_index, except: [:index, :new, :show, :search]
+  before_action :move_to_index, except: [:index, :new, :show, :search, :bizarre, :alien, :uma, :myth, :ruin]
   before_action :authenticate_user!, only: :new
 
   def index

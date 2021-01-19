@@ -5,13 +5,13 @@ class Picture < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :genre
 
-  validates :genre_id, numericality: { other_than: 0 }
-
   with_options presence: true do
     validates :image
     validates :title
     validates :text
   end
+
+  validates :genre_id, numericality: { other_than: 0 }
 
   def self.search(search)
     if search != ''

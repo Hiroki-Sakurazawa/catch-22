@@ -20,6 +20,7 @@ class PicturesController < ApplicationController
     end
   end
 
+  
   def destroy
     picture = Picture.find(params[:id])
     if current_user.id == picture.user.id

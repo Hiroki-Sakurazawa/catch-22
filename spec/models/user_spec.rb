@@ -31,7 +31,7 @@ RSpec.describe User, type: :model do
       it 'nicknameが7文字以上だと登録ができない' do
         @user.nickname = 'kkkkkkk'
         @user.valid?
-        expect(@user.errors.full_messages).to include("Nickname is too long (maximum is 6 characters)")
+        expect(@user.errors.full_messages).to include('Nickname is too long (maximum is 6 characters)')
       end
       it '重複したemailが存在する場合登録できない' do
         @user.save
@@ -57,5 +57,4 @@ RSpec.describe User, type: :model do
       end
     end
   end
-
 end

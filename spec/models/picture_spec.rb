@@ -31,7 +31,7 @@ RSpec.describe Picture, type: :model do
       it 'genreが0だと登録ができない' do
         @picture.genre_id = 0
         @picture.valid?
-        expect(@picture.errors.full_messages).to include("Genre must be other than 0")
+        expect(@picture.errors.full_messages).to include('Genre must be other than 0')
       end
       it 'userが紐づいていないと登録できない' do
         @picture.user = nil

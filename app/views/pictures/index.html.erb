@@ -25,4 +25,9 @@
     </div>
     <%end%>
   <% end %>
+    <% if @pictures.empty? %>
+      <div class='no-pictures-box'>
+          <p class='no-pictures'>現在記事はありません。</p>
+      </div>
+  <% end %>
 </div>

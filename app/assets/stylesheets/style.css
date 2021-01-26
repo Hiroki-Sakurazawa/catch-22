@@ -249,6 +249,47 @@ margin:4px 0px 0px 12px;
   font-weight: bold;
 }
 
+/* フィーチャー部分 */
+
+.features-box{
+  position: fixed;
+  right: 0px;
+  top: 80px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+}
+
+.features-box-left, .features-box-right{
+  height: 50px;
+  width: 10px;
+}
+
+.features-box-center{
+  height: 50px;
+  width: 180px;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.features-txt{
+  color: red;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.features{
+  background-color: #c9f0fd;
+  width: 200px;
+  height: 450px;
+  position: fixed;
+  right: 0px;
+  top: 130px;
+}
+
 /* フッター部分 */
 
 .footer{

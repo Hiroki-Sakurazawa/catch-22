@@ -57,7 +57,7 @@ margin:4px 0px 0px 12px;
 }
 
 .right-box:hover, .left-box:hover {
-  background-color:#e6e6e6;
+  opacity: 0.7;
 }
 
 .left-box{
@@ -115,7 +115,7 @@ margin:4px 0px 0px 12px;
 }
 
 .fixed-bar:hover{
-  background-color: #e6e6e6;
+  opacity: 0.7;
 }
 
 /* 検索バー */
@@ -155,7 +155,7 @@ margin:4px 0px 0px 12px;
 }
 
 .search-button:hover {
-  background-color: #e6e6e6;
+  opacity: 0.7;
 }
 
 .search-image {
@@ -202,15 +202,15 @@ margin:4px 0px 0px 12px;
   width: 10px;
 }
 
-.genre1{
+.genre{
   margin-top: 2px;
   color: #363636;
   font-size: 16px;
   text-decoration: none;
 }
 
-.genre1:hover {
-  color:grey;
+.genre:hover {
+  opacity: 0.7;
 }
 
 .contribute-link{
@@ -220,7 +220,6 @@ margin:4px 0px 0px 12px;
 .contribute-bar{
   width: 200px;
   height: 30px;
-  background-color:red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,7 +240,7 @@ margin:4px 0px 0px 12px;
 }
 
 .contribute-bar, .fixed-contribute-bar:hover {
-  background-color:#ff5353;
+  opacity: 0.7;
 }
 
 .contribute-btn{
@@ -368,7 +367,7 @@ body{
 }
 
 .submit:hover {
-  background-color: #e6e6e6;
+  opacity: 0.7;
 }
 
 /* ログインフラッシュ */
@@ -398,7 +397,7 @@ body{
 }
 
 .picture:hover{
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .title-bar{
@@ -562,7 +561,7 @@ body{
 }
 
 .show-contributor-name:hover{
-  background-color: #e6e6e6;
+  opacity: 0.7;
 }
 
 .show-image-box{
@@ -618,7 +617,7 @@ body{
 }
 
 .edit-btn:hover, .destroy-btn:hover{
-  background-color: #e6e6e6;
+  opacity: 0.7;
 }
 
 /* コメント部分 */
@@ -639,7 +638,7 @@ body{
 }
 
 .comment-submit:hover{
-  background-color: #e6e6e6;
+  opacity: 0.7;
 }
 
 .comment-submit-box{

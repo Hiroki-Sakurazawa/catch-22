@@ -15,7 +15,11 @@ display: flex;
 align-items: flex-end;
 }
 
-.catch22-white{
+.header-left:hover{
+  opacity: 0.7;
+}
+
+.catch22{
 color: grey;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 font-size: 36px;
@@ -391,6 +395,10 @@ body{
   margin: 5px 0px 10px 10px;
   box-sizing: border-box;
   padding: 5px 0px 2px 5px;
+}
+
+.picture:hover{
+  opacity: 0.6;
 }
 
 .title-bar{

@@ -2,6 +2,8 @@ class PicturesController < ApplicationController
   before_action :move_to_index, except: [:index, :new, :show, :search, :bizarre, :alien, :uma, :myth, :ruin]
   before_action :authenticate_user!, only: :new
 
+  impressionist :actions=> [:show]
+
   def index
     @pictures = Picture.includes(:user).order('created_at DESC')
   end
@@ -34,6 +36,7 @@ class PicturesController < ApplicationController
     @picture = Picture.find(params[:id])
     @comment = Comment.new
     @comments = @picture.comments.includes(:user).order('created_at DESC')
+    impressionist(@picture, nil, unique: [:user_id])
   end
 
   def edit

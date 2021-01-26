@@ -5,6 +5,8 @@ class Picture < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :genre
 
+  is_impressionable  counter_cache: true
+
   with_options presence: true do
     validates :image
     validates :title

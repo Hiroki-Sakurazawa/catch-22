@@ -313,7 +313,7 @@ margin:4px 0px 0px 12px;
   font-weight: bold;
   color: black;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #d9f4ff;
+  background: linear-gradient(to bottom, transparent 0%, transparent 65%, #d9e9ff 65%, #d9f4ff 100%);
 }
 
 .feature-title{

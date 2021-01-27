@@ -74,6 +74,7 @@ margin:4px 0px 0px 12px;
   font-size: 15px;
   color:#363636;
   text-decoration: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* サイト情報バー */
@@ -96,6 +97,7 @@ margin:4px 0px 0px 12px;
   font-size: 12px;
   color: #363636;
   margin-top: 2px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .fixed-bar{
@@ -207,6 +209,7 @@ margin:4px 0px 0px 12px;
   color: #363636;
   font-size: 16px;
   text-decoration: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .genre:hover {
@@ -247,6 +250,7 @@ margin:4px 0px 0px 12px;
   color: white;
   font-size: 16px;
   font-weight: bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* フィーチャー部分 */
@@ -283,7 +287,7 @@ margin:4px 0px 0px 12px;
 
 .features{
   width: 200px;
-  height: 450px;
+  height: 520px;
   position: fixed;
   right: 0px;
   top: 120px;
@@ -291,20 +295,14 @@ margin:4px 0px 0px 12px;
 
 .feature{
   width: 200px;
-  height: 95px;
+  height: 30px;
   border-bottom: 1px solid grey;
+  display: flex;
+  align-items: flex-end;
 }
 
 .feature:hover{
   opacity: 0.7;
-}
-
-.feature-image-box{
-  margin-top: 2px;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
 .feature-title-bar{
@@ -314,12 +312,11 @@ margin:4px 0px 0px 12px;
   font-weight: bold;
   color: black;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 8px;
+  background-color: #d9f4ff;
 }
 
-.feature-small-image{
-  width: 105px;
-  height: 70px;
+.feature-title{
+  margin-top: 2px;
 }
 
 /* フッター部分 */
@@ -383,6 +380,7 @@ body{
   margin-bottom: 20px;
   margin-right: 10px;
   color: #363636;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .take-image{
@@ -392,14 +390,16 @@ body{
 .user-form-text {
   font-size: 14px;
   color: #363636;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .necessary {
   font-size: 12px;
   background-color: red;
   color: white;
-  padding: 3px;
+  padding: 2px;
   border-radius: 2px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .genre-select{
@@ -437,6 +437,7 @@ body{
   margin-top: 10px;
   border-radius: 0px;
   cursor: pointer;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .submit:hover {
@@ -450,6 +451,7 @@ body{
   color: #414141;
   display: flex;
   justify-content: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* indexページ */
@@ -479,6 +481,7 @@ body{
   font-size: 19px;
   font-weight: bold;
   color: black;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .text-bar{
@@ -487,6 +490,7 @@ body{
   color: #363636;
   font-size: 13px;
   margin-top: 5px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .image-info-bar{
@@ -525,6 +529,7 @@ body{
   color:black;
   padding: 2px 2px 0px;
   margin-bottom: 3px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .contributor-name{
@@ -532,6 +537,7 @@ body{
   background-color:lightgrey;
   color: black;
   padding: 2px 2px 0px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .date-box{
@@ -601,6 +607,7 @@ body{
   font-weight: bold;
   width: 750px;
   margin-top: 25px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .show-info-box{
@@ -622,6 +629,7 @@ body{
   color:black;
   padding: 2px 2px 0px;
   margin-bottom: 3px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .show-contributor-name{
@@ -631,6 +639,7 @@ body{
   color: black;
   padding: 2px 2px 0px;
   margin-left: 3px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .show-contributor-name:hover{
@@ -658,6 +667,7 @@ body{
   margin-top: 40px;
   color:black;
   font-size: 16px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .under-text-box{
@@ -677,6 +687,7 @@ body{
   text-decoration: none;
   background-color:lightgrey;
   padding: 4px 2px 3px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .destroy-btn{
@@ -687,6 +698,7 @@ body{
   padding: 4px 2px 3px;
   margin-left: 3px;
   margin-right: 2px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .edit-btn:hover, .destroy-btn:hover{
@@ -708,6 +720,7 @@ body{
   border: 0px;
   color: #363636;
   font-size: 15px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .comment-submit:hover{
@@ -735,6 +748,7 @@ body{
   width: fit-content;
   text-decoration: none;
   padding: 3px 4px 0px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .comment-contributor:hover{
@@ -746,6 +760,7 @@ body{
   font-size: 14px;
   color: black;
   margin-top: 7px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .attention-box{
@@ -757,6 +772,7 @@ body{
   color: #363636;
   font-size: 14px;
   margin-top: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .comment-contributor-date-gox{

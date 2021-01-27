@@ -79,6 +79,18 @@
     <div class="features-box-right"></div>
     </div>
     <div class="features">
+    <% @features.each do |feature| %>
+      <%= link_to picture_path(feature.id), class: "picture-link", method: :get do %>
+      <div class="feature">
+        <div class="feature-title-bar">
+          <p class="feature-title"><%= feature.title %></p>
+        </div>
+        <div class="feature-image-box">
+          <div class="feature-image"><%= image_tag feature.image, class: "feature-small-image" %></div>
+        </div>
+      </div>
+      <%end%>
+    <%end%>
     </div>
     <footer class="footer">
     <div class="footer-left"></div>

@@ -256,17 +256,17 @@ margin:4px 0px 0px 12px;
   right: 0px;
   top: 80px;
   width: 200px;
-  height: 50px;
+  height: 40px;
   display: flex;
 }
 
 .features-box-left, .features-box-right{
-  height: 50px;
+  height: 40px;
   width: 10px;
 }
 
 .features-box-center{
-  height: 50px;
+  height: 40px;
   width: 180px;
   border-bottom: 1px solid grey;
   display: flex;
@@ -282,12 +282,44 @@ margin:4px 0px 0px 12px;
 }
 
 .features{
-  background-color: #c9f0fd;
   width: 200px;
   height: 450px;
   position: fixed;
   right: 0px;
-  top: 130px;
+  top: 120px;
+}
+
+.feature{
+  width: 200px;
+  height: 95px;
+  border-bottom: 1px solid grey;
+}
+
+.feature:hover{
+  opacity: 0.7;
+}
+
+.feature-image-box{
+  margin-top: 2px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.feature-title-bar{
+  height: 20px;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 8px;
+}
+
+.feature-small-image{
+  width: 105px;
+  height: 70px;
 }
 
 /* フッター部分 */

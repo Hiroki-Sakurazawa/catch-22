@@ -6,7 +6,7 @@
       <div class="show-genre-contributor-box">
         <p class="show-genre"><%=@picture.genre.name%></p>
         <%=link_to user_path(@picture.user.id), class: "show-contributor-name-link", method: :get do %>
-        <p class="show-contributor-name"><%= @picture.user.user_name %></p>
+        <p class="show-contributor-name"><%= @picture.user.nickname %></p>
         <%end%>
       </div>
       <div class="show-date-box">

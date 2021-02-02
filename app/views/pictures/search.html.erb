@@ -10,7 +10,7 @@
         <div class="image-box"><%= image_tag picture.image, class: "small-image" %></div>
         <div class="info-box">
           <div class="genre-contributor-box">
-            <p class="index-genre"><%= picture.genre.name%></p><p class="contributor-name"><%= picture.user.user_name %></p>
+            <p class="index-genre"><%= picture.genre.name%></p><p class="contributor-name"><%= picture.user.nickname %></p>
           </div>
           <div class="date-box">
             <% if Date.current.strftime('%Y.%m.%d') == picture.created_at.strftime('%Y.%m.%d')%>

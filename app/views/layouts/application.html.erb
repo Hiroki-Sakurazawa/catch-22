@@ -28,7 +28,7 @@
         <div class="login-bar">
         <% if user_signed_in? %>
           <div class="left-box">
-            <%= link_to current_user.nickname, user_path(current_user.id), class: "left_text" %>
+            <%= link_to current_user.user_name, user_path(current_user.id), class: "left_text" %>
           </div>
           <div class="right-box">
             <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "right_text" %>

@@ -54,6 +54,7 @@ margin:4px 0px 0px 12px;
   background-color: lightgrey;
   width: 100px;
   border: 1px solid grey;
+  height: 23px;
 }
 
 .right-box:hover, .left-box:hover {
@@ -68,6 +69,7 @@ margin:4px 0px 0px 12px;
   width: 100px;
   margin-right: 10px;
   border: 1px solid grey;
+  height: 23px;
 }
 
 .left_text, .right_text{
@@ -542,6 +544,7 @@ body{
 }
 
 .contributor-name{
+  height: 18px;
   font-size: 13px;
   background-color:lightgrey;
   color: black;
@@ -641,7 +644,7 @@ body{
 }
 
 .show-contributor-name{
-  height: fit-content;
+  height: 21px;
   font-size: 14px;
   background-color:lightgrey;
   color: black;

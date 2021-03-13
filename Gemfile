@@ -70,3 +70,5 @@ gem 'image_processing', '~> 1.2'
 gem 'active_hash'
 
 gem 'impressionist', '~>1.6.1'
+
+gem "aws-sdk-s3", require: false
